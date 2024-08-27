@@ -40,7 +40,7 @@ header nav ul a:hover {
 .s-hero {
   position: relative;
   width: 100%;
-  padding-top: 11.3rem;  
+  padding-top: 11.3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,11 +74,11 @@ header nav ul a:hover {
 }
 
 .s-hero .text h1::before {
-  content: '';
+  content: "";
   width: 100%;
   max-width: 59.9rem;
   height: 2.2rem;
-  background: url('../imgs/line-title.svg') no-repeat center center;	
+  background: url("../imgs/line-title.svg") no-repeat center center;
   position: absolute;
   bottom: -5px;
   z-index: -1;
@@ -121,4 +121,49 @@ header nav ul a:hover {
   justify-content: space-between;
   border-bottom: 1px solid var(--gray-800);
   padding-bottom: 12.8rem;
+}
+
+/* Second Section */
+.s-arte-front {
+  padding: 12.8rem 0;
+}
+
+.s-arte-front .title-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.s-arte-front .title-text h3 {
+  letter-spacing: -1.2px;
+  font-weight: 600;
+}
+
+.s-arte-front .title-text p {
+  color: var(--gray-600);
+  letter-spacing: -0.54px;
+  margin-top: 1.6rem;
+}
+
+.s-arte-front .title-text .left {
+  max-width: 53.9rem;
+}
+
+.s-arte-front .title-text .left p {
+  max-width: 45.2rem;
+}
+
+.s-arte-front .title-text .right {
+  max-width: 42.9rem;
+}
+
+.s-arte-front .all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.s-arte-front .all .card-post:first-child {
+  grid-column: span 2;
 }
