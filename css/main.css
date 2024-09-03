@@ -295,6 +295,10 @@ footer .copy strong {
   .s-arte-front .all .card-post:nth-child(2) {
     grid-column: span 3;
   }
+
+  footer .main-area .right {
+    max-width: 66.2rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -332,6 +336,25 @@ footer .copy strong {
   .s-arte-front .all .card-post:first-child,
   .s-arte-front .all .card-post:nth-child(2) {
     grid-column: initial;
+  }
+
+  footer .main-area {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  footer .main-area .left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  footer .main-area .left img {
+    margin: 0 auto;
+  }
+
+  footer .main-area .right {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -443,5 +466,42 @@ footer .copy strong {
 
   .s-arte-front .all {
     gap: 3.2rem;
+  }
+
+  .s-newsletter .container h2 {
+    font-size: 4rem;
+  }
+
+  footer .main-area .right {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  footer .main-area .right .item-nav h6 {
+    text-align: center;
+  }
+
+  footer .main-area .right .item-nav ul li a {
+    justify-content: center;
+  }
+
+  footer .main-area .right .item-nav:last-child {
+    width: 100%;
+  }
+
+  footer .main-area .right .item-nav:last-child ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  footer .main-area .right .item-nav:last-child ul li:not(:last-child ) {
+    margin-bottom: 0;
+  }
+
+  footer .copy { 
+    text-align: center;
+    font-size: 1.4rem;
   }
 }
